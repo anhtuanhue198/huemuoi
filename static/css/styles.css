@@ -1294,4 +1294,10 @@ html {
   font-size: 30px; /* Điều chỉnh theo nhu cầu */
   font-weight: bold;
 }
+.img_bg {
+  background-image: url("static/images/cover3-05-05-5.webp");
+  background-size: cover;
+  background-position: center;
+}
+
 
