@@ -1,27 +1,35 @@
-header {
-  width: 100%;
-  /* position: fixed; */
+/* CSS cho header */
+.navbar {
+  background-color: rgba(255, 165, 0, 0.8); /* Cam nhẹ, độ mờ 40% */
+  position: fixed;
   top: 0;
   left: 0;
-  background: transparent;
-  color: white;
-  text-align: center;
-  /* padding: 10px; */
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+
 }
 
-/* main {
-  padding-top: 100px; /* Điều chỉnh theo chiều cao của header */
-} */
-
-/* Khi scroll xuống, header sẽ hiện */
-header.scrolled {
-  /* background: rgba(0, 0, 0, 0.8); */
-  padding: 10px;
-  font-size: 20px;
+/* Khi cuộn trang, navbar đổi màu */
+.navbar.scrolled {
+  background-color: rgba(255, 140, 0, 0.8); /* Cam đậm hơn khi cuộn */
 }
 
+/* Thêm khoảng trống cho phần nội dung sau header */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Thêm khoảng trống cho phần nội dung */
+#content {
+  padding-top: 90px; /* Tạo khoảng trống cho phần nội dung (bằng chiều cao của navbar) */
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .cafe-landing {
   display: flex;
@@ -248,7 +256,7 @@ header.scrolled {
   background-color: #fff;
   display: flex;
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
   overflow: hidden;
   font-family: Roboto, sans-serif;
   color: #000;
@@ -264,15 +272,18 @@ header.scrolled {
   flex-wrap: wrap;
 }
 .about-content {
-  align-self: stretch;
+  align-self: center; /* Hoặc stretch nếu cần */
   display: flex;
   min-width: 240px;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center; /* Căn giữa theo chiều dọc */
+  align-items: center; /* Căn giữa theo chiều ngang */
   flex: 1;
   flex-basis: 0%;
-  margin: auto 0;
+  margin: auto;
+  text-align: center; /* Đảm bảo text cũng căn giữa */
 }
+
 .about-heading {
   font-size: 40px;
   font-weight: 700;
