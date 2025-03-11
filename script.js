@@ -26,4 +26,15 @@ document.querySelectorAll('.hero-buttons a').forEach(link => {
   });
 });
 
+let currentIndex = 0;
+        const slider = document.getElementById("heroSlider");
+        const totalSlides = document.querySelectorAll(".hero-image").length;
+
+        function slideImages() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            const translateValue = -currentIndex * 100 + "%";
+            slider.style.transform = `translateX(${translateValue})`;
+        }
+
+        setInterval(slideImages, 2000); // Chuyển ảnh mỗi 3 giây
 

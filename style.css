@@ -7,6 +7,26 @@ body {
   color: #000; /* Màu chữ tương phản để dễ đọc */
 }
 
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Điều chỉnh chiều cao phù hợp */
+  overflow: hidden;
+}
+
+/* Slider chứa ảnh */
+.hero-slider {
+  display: flex;
+  width: 100%; /* Tổng số ảnh * 100% */
+  transition: transform 1s ease-in-out;
+}
+
+/* Ảnh bên trong slider */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* CSS cho header */
 .navbar {
@@ -33,7 +53,7 @@ body {
 }
 
 /* Thêm khoảng trống cho phần nội dung */
-#content {
+.addpadding {
   padding-top: 90px; /* Tạo khoảng trống cho phần nội dung (bằng chiều cao của navbar) */
 }
 
@@ -626,7 +646,7 @@ html {
   color: #000;
   justify-content: flex-start;
   font: 400 14px Roboto, sans-serif;
-}
+}}
 .footer-divider {
   background-color: #000;
   display: flex;
