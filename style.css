@@ -670,7 +670,7 @@ html {
 @media (max-width: 991px) {
   .navbar {
     max-width: 100%;
-    padding: 0 0px;
+    padding: 0 1px;
   }
   .navbar-container {
     max-width: 100%;
