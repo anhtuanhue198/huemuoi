@@ -44,7 +44,7 @@ body {
 /* Khi cuộn trang, navbar đổi màu */
 .navbar.scrolled {
   background-color: rgba(255, 140, 0, 0.8); /* Cam đậm hơn khi cuộn */
-  padding: 0;
+  padding: 0px;
 }
 
 /* Thêm khoảng trống cho phần nội dung sau header */
@@ -55,7 +55,7 @@ body {
 
 /* Thêm khoảng trống cho phần nội dung */
 .addpadding {
-  padding-top: 90px; /* Tạo khoảng trống cho phần nội dung (bằng chiều cao của navbar) */
+  padding-top: 90px; /* Tạo khoảng trống cho phần nội dung (bằng chiều cao của ) */
 }
 
 html {
@@ -670,7 +670,7 @@ html {
 @media (max-width: 991px) {
   .navbar {
     max-width: 100%;
-    padding: 0;
+    padding: 0 0px;
   }
   .navbar-container {
     max-width: 100%;
