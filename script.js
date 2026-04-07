@@ -36,7 +36,7 @@ let currentIndex = 0;
             slider.style.transform = `translateX(${translateValue})`;
         }
 
-        setInterval(slideImages, 2000); // Chuyển ảnh mỗi 3 giây
+        setInterval(slideImages, 2000); // Chuyển ảnh mỗi 5 giây
 let currentIndex2 = 0;
         const slider2 = document.getElementById("heroSlider2");
         const totalSlides2 = document.querySelectorAll(".hero-image2").length;
@@ -59,3 +59,25 @@ let currentIndex3 = 0;
         }
 
         setInterval(slideImages3, 2000);
+let currentIndex4 = 0;
+        const slider4 = document.getElementById("heroSlider4");
+        const totalSlides4 = document.querySelectorAll(".hero-image4").length;
+
+        function slideImages4() {
+            currentIndex4 = (currentIndex4 + 1) % totalSlides4;
+            const translateValue4 = -currentIndex4 * 100 + "%";
+            slider4.style.transform = `translateX(${translateValue4})`;
+        }
+
+        setInterval(slideImages4, 2000);      
+let currentIndex5 = 0;
+        const slider5 = document.getElementById("heroSlider5");
+        const totalSlides5 = document.querySelectorAll(".hero-image5").length;
+
+        function slideImages5() {
+            currentIndex5 = (currentIndex5 + 1) % totalSlides5;
+            const translateValue5 = -currentIndex5 * 100 + "%";
+            slider5.style.transform = `translateX(${translateValue5})`;
+        }
+
+        setInterval(slideImages5, 2000);

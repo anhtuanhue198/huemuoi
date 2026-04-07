@@ -42,6 +42,15 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.hero-image5 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}.hero-image6 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* CSS cho header */
 .navbar {
   background-color: rgba(255, 165, 0, 0.8); /* Cam nhẹ, độ mờ 40% */
