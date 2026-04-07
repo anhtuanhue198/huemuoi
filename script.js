@@ -37,4 +37,25 @@ let currentIndex = 0;
         }
 
         setInterval(slideImages, 2000); // Chuyển ảnh mỗi 3 giây
+let currentIndex2 = 0;
+        const slider2 = document.getElementById("heroSlider2");
+        const totalSlides2 = document.querySelectorAll(".hero-image2").length;
 
+        function slideImages2() {
+            currentIndex2 = (currentIndex2 + 1) % totalSlides2;
+            const translateValue2 = -currentIndex2 * 100 + "%";
+            slider2.style.transform = `translateX(${translateValue2})`;
+        }
+
+        setInterval(slideImages2, 2000);
+let currentIndex3 = 0;
+        const slider3 = document.getElementById("heroSlider3");
+        const totalSlides3 = document.querySelectorAll(".hero-image3").length;
+
+        function slideImages3() {
+            currentIndex3 = (currentIndex3 + 1) % totalSlides3;
+            const translateValue3 = -currentIndex3 * 100 + "%";
+            slider3.style.transform = `translateX(${translateValue3})`;
+        }
+
+        setInterval(slideImages3, 2000);
